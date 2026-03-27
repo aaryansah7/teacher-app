@@ -1,0 +1,249 @@
+{
+  "info": {
+    "_postman_id": "aeb6652d-7528-4023-8d2b-df533469a069",
+    "name": "Teacher API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53558242",
+    "_collection_link": "https://go.postman.co/collection/53558242-aeb6652d-7528-4023-8d2b-df533469a069?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Register API",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "test@example.com",
+              "type": "text",
+              "uuid": "fc271511-074c-4f43-9aea-b4d718a0b035"
+            },
+            {
+              "key": "first_name",
+              "value": "Aaryan",
+              "type": "text",
+              "uuid": "071cf450-11a9-4ec7-88b2-49d761ecbfb5"
+            },
+            {
+              "key": "last_name",
+              "value": "Test",
+              "type": "text",
+              "uuid": "e410cef1-278b-44dc-b19d-00b8568149e1"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text",
+              "uuid": "c6ab6553-3c19-44be-b1bb-1d373db89b55"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login API",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "test@example.com",
+              "type": "text",
+              "uuid": "5276f4c5-dfdd-425c-84c9-f740f236bb69"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text",
+              "uuid": "de4fb1b4-87ef-4203-b859-bbca519363bb"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Teacher API",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NzQ2MzI4ODIsImV4cCI6MTc3NDYzNjQ4MiwiaWQiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIn0.1o9AT30BQKbytDcQa5wOvhRIuG_0E6NB3ab5xMXwFXo",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "teacher102@example.com",
+              "type": "text",
+              "uuid": "9f8a35a9-880f-4ff9-bc9e-5e19501559fc"
+            },
+            {
+              "key": "first_name",
+              "value": "John",
+              "type": "text",
+              "uuid": "5bc2dcc3-928f-4a96-a9f6-ea996507c1c8"
+            },
+            {
+              "key": "last_name",
+              "value": "Doe",
+              "type": "text",
+              "uuid": "a25ea62d-4748-4f2e-abec-9dc1ecd81132"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text",
+              "uuid": "d65d0bef-a846-4dba-9f7f-c792faaff2ef"
+            },
+            {
+              "key": "university_name",
+              "value": "XYZ University",
+              "type": "text",
+              "uuid": "c1702427-d9ff-4367-bf4a-ef5cb4294d1d"
+            },
+            {
+              "key": "gender",
+              "value": "Male",
+              "type": "text",
+              "uuid": "df72b4ea-5088-494b-bbd4-52b718d68c89"
+            },
+            {
+              "key": "year_joined",
+              "value": "2020",
+              "type": "text",
+              "uuid": "85119cc6-9c01-48f4-b9cd-957a96184539"
+            },
+            {
+              "key": "subject",
+              "value": "Math",
+              "type": "text",
+              "uuid": "1d2a7ddb-4350-45f4-b07f-82deb525c6d5"
+            },
+            {
+              "key": "phone",
+              "value": "9999999999",
+              "type": "text",
+              "uuid": "69cc15cf-583e-4e7c-93a9-0f5eafa5040e"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/teacher",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "teacher"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Users API",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NzQ2MzI4ODIsImV4cCI6MTc3NDYzNjQ4MiwiaWQiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIn0.1o9AT30BQKbytDcQa5wOvhRIuG_0E6NB3ab5xMXwFXo",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8081/api/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Teachers API",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NzQ2MzI4ODIsImV4cCI6MTc3NDYzNjQ4MiwiaWQiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIn0.1o9AT30BQKbytDcQa5wOvhRIuG_0E6NB3ab5xMXwFXo",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8081/api/teachers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "teachers"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
